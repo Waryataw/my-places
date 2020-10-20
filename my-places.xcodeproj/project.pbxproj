@@ -12,6 +12,7 @@
 		FA353BD5253DDCA50041D5DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA353BD3253DDCA50041D5DD /* Main.storyboard */; };
 		FA353BD7253DDCA50041D5DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA353BD6253DDCA50041D5DD /* Assets.xcassets */; };
 		FA353BDA253DDCA50041D5DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA353BD8253DDCA50041D5DD /* LaunchScreen.storyboard */; };
+		FAABA453253F52630042974E /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAABA452253F52630042974E /* CustomTableViewCell.swift */; };
 		FAC1EEAE253DF9F300C8DCC1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC1EEAD253DF9F300C8DCC1 /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +24,7 @@
 		FA353BD6253DDCA50041D5DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA353BD9253DDCA50041D5DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA353BDB253DDCA50041D5DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAABA452253F52630042974E /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		FAC1EEAD253DF9F300C8DCC1 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -58,6 +60,7 @@
 			children = (
 				FA353BCD253DDCA50041D5DD /* AppDelegate.swift */,
 				FAC1EEAD253DF9F300C8DCC1 /* MainViewController.swift */,
+				FAABA452253F52630042974E /* CustomTableViewCell.swift */,
 				FA353BCF253DDCA50041D5DD /* SceneDelegate.swift */,
 				FA353BD3253DDCA50041D5DD /* Main.storyboard */,
 				FA353BD6253DDCA50041D5DD /* Assets.xcassets */,
@@ -139,6 +142,7 @@
 			files = (
 				FAC1EEAE253DF9F300C8DCC1 /* MainViewController.swift in Sources */,
 				FA353BCE253DDCA50041D5DD /* AppDelegate.swift in Sources */,
+				FAABA453253F52630042974E /* CustomTableViewCell.swift in Sources */,
 				FA353BD0253DDCA50041D5DD /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
