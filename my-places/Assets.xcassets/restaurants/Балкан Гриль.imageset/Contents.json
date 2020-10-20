@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "Бочка.jpg",
+      "filename" : "Балкан Гриль.jpg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "Бочка@2x.jpg",
+      "filename" : "Балкан Гриль@2x.jpg",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "Бочка@3x.jpg",
+      "filename" : "Балкан Гриль@3x.jpg",
       "idiom" : "universal",
       "scale" : "3x"
     }

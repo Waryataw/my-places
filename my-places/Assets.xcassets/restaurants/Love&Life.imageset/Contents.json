@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "Бочка.jpg",
+      "filename" : "Love&Life.jpg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "Бочка@2x.jpg",
+      "filename" : "Love&Life@2x.jpg",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "Бочка@3x.jpg",
+      "filename" : "Love&Life@3x.jpg",
       "idiom" : "universal",
       "scale" : "3x"
     }

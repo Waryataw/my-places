@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "Бочка.jpg",
+      "filename" : "Дастархан.jpg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "Бочка@2x.jpg",
+      "filename" : "Дастархан@2x.jpg",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "Бочка@3x.jpg",
+      "filename" : "Дастархан@3x.jpg",
       "idiom" : "universal",
       "scale" : "3x"
     }

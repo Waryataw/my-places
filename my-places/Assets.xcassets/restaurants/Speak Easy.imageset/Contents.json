@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "Бочка.jpg",
+      "filename" : "Speak Easy.jpg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "Бочка@2x.jpg",
+      "filename" : "Speak Easy@2x.jpg",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "Бочка@3x.jpg",
+      "filename" : "Speak Easy@3x.jpg",
       "idiom" : "universal",
       "scale" : "3x"
     }

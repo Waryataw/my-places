@@ -10,7 +10,7 @@ import UIKit
 class MainViewController: UITableViewController {
 
     let restaurantNames = [
-        "Адачи", "ДонМак", "Юзовка", "Свинья", "Happy Life", "Rave", "Basilic", "Боржоми", "Пушкин", "Гуси-лебеди", "Banana", "Бочка",
+        "Балкан Гриль", "Бочка", "Вкусные истории", "Дастархан", "Индокитай", "Классик", "Шок", "Bonsai", "Burger Heroes", "Kitchen", "Love&Life", "Morris Pub", "Sherlock Holmes", "Speak Easy", "X.O",
     ]
     
     override func viewDidLoad() {
