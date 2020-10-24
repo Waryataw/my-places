@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8BF485466D2FF151D7684C1F /* Pods_my_places.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAE6D203C28C1614B8B5AE60 /* Pods_my_places.framework */; };
 		FA0CFDAE2541C77A006F6A34 /* NewPlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0CFDAD2541C77A006F6A34 /* NewPlaceViewController.swift */; };
 		FA353BCE253DDCA50041D5DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA353BCD253DDCA50041D5DD /* AppDelegate.swift */; };
 		FA353BD0253DDCA50041D5DD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA353BCF253DDCA50041D5DD /* SceneDelegate.swift */; };
@@ -19,6 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7597D53DCAF63A2297C56CC3 /* Pods-my-places.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-my-places.release.xcconfig"; path = "Target Support Files/Pods-my-places/Pods-my-places.release.xcconfig"; sourceTree = "<group>"; };
+		B31FBCC0B9634253919BF11D /* Pods-my-places.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-my-places.debug.xcconfig"; path = "Target Support Files/Pods-my-places/Pods-my-places.debug.xcconfig"; sourceTree = "<group>"; };
+		BAE6D203C28C1614B8B5AE60 /* Pods_my_places.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_my_places.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA0CFDAD2541C77A006F6A34 /* NewPlaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPlaceViewController.swift; sourceTree = "<group>"; };
 		FA353BCA253DDCA50041D5DD /* my-places.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "my-places.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA353BCD253DDCA50041D5DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -37,17 +41,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BF485466D2FF151D7684C1F /* Pods_my_places.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2D4E69FB61213D89903C7620 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BAE6D203C28C1614B8B5AE60 /* Pods_my_places.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D4F342F7BEB703DE854DE925 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B31FBCC0B9634253919BF11D /* Pods-my-places.debug.xcconfig */,
+				7597D53DCAF63A2297C56CC3 /* Pods-my-places.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		FA353BC1253DDCA50041D5DD = {
 			isa = PBXGroup;
 			children = (
 				FA353BCC253DDCA50041D5DD /* my-places */,
 				FA353BCB253DDCA50041D5DD /* Products */,
+				D4F342F7BEB703DE854DE925 /* Pods */,
+				2D4E69FB61213D89903C7620 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,9 +108,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FA353BDE253DDCA50041D5DD /* Build configuration list for PBXNativeTarget "my-places" */;
 			buildPhases = (
+				A4801476507F47EA6817BBCC /* [CP] Check Pods Manifest.lock */,
 				FA353BC6253DDCA50041D5DD /* Sources */,
 				FA353BC7253DDCA50041D5DD /* Frameworks */,
 				FA353BC8253DDCA50041D5DD /* Resources */,
+				C62874743031AD3DC53FF9BB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -140,6 +167,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A4801476507F47EA6817BBCC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-my-places-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C62874743031AD3DC53FF9BB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-my-places/Pods-my-places-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-my-places/Pods-my-places-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-my-places/Pods-my-places-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FA353BC6253DDCA50041D5DD /* Sources */ = {
@@ -295,6 +364,7 @@
 		};
 		FA353BDF253DDCA50041D5DD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B31FBCC0B9634253919BF11D /* Pods-my-places.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -314,6 +384,7 @@
 		};
 		FA353BE0253DDCA50041D5DD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7597D53DCAF63A2297C56CC3 /* Pods-my-places.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
