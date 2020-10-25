@@ -16,7 +16,6 @@ class NewPlaceViewController: UITableViewController {
     @IBOutlet weak var placeLocation: UITextField!
     @IBOutlet weak var placeType: UITextField!
     
-    var newPlace: Place?
     var imageIsChanged = false
     
     override func viewDidLoad() {
@@ -73,11 +72,14 @@ class NewPlaceViewController: UITableViewController {
             image = #imageLiteral(resourceName: "imagePlaceholder")
         }
         
-        newPlace = Place(name: placeName.text!,
-                         location: placeLocation.text,
-                         type: placeType.text,
-                         image: image,
-                         reustarantImage: nil)
+        let imageData = image?.pngData()
+        
+        let newPlace = Place(name: placeName.text!,
+                             location: placeLocation.text,
+                             type: placeType.text,
+                             imageData: imageData)
+        
+        StorageManager.saveObject(place: newPlace)
         
     }
     @IBAction func cancelAction(_ sender: Any) {

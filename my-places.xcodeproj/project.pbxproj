@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,6 +17,7 @@
 		FAABA453253F52630042974E /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAABA452253F52630042974E /* CustomTableViewCell.swift */; };
 		FAAD61C72540028E00AE65D1 /* PlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAD61C62540028E00AE65D1 /* PlaceModel.swift */; };
 		FAC1EEAE253DF9F300C8DCC1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC1EEAD253DF9F300C8DCC1 /* MainViewController.swift */; };
+		FAF7FF6825445EED00FC877A /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF7FF6725445EED00FC877A /* StorageManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		FAABA452253F52630042974E /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		FAAD61C62540028E00AE65D1 /* PlaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceModel.swift; sourceTree = "<group>"; };
 		FAC1EEAD253DF9F300C8DCC1 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		FAF7FF6725445EED00FC877A /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +64,6 @@
 				B31FBCC0B9634253919BF11D /* Pods-my-places.debug.xcconfig */,
 				7597D53DCAF63A2297C56CC3 /* Pods-my-places.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -95,6 +96,7 @@
 				FA353BD3253DDCA50041D5DD /* Main.storyboard */,
 				FA353BD6253DDCA50041D5DD /* Assets.xcassets */,
 				FAAD61C62540028E00AE65D1 /* PlaceModel.swift */,
+				FAF7FF6725445EED00FC877A /* StorageManager.swift */,
 				FA353BD8253DDCA50041D5DD /* LaunchScreen.storyboard */,
 				FA353BDB253DDCA50041D5DD /* Info.plist */,
 			);
@@ -218,6 +220,7 @@
 				FAC1EEAE253DF9F300C8DCC1 /* MainViewController.swift in Sources */,
 				FA0CFDAE2541C77A006F6A34 /* NewPlaceViewController.swift in Sources */,
 				FA353BCE253DDCA50041D5DD /* AppDelegate.swift in Sources */,
+				FAF7FF6825445EED00FC877A /* StorageManager.swift in Sources */,
 				FAAD61C72540028E00AE65D1 /* PlaceModel.swift in Sources */,
 				FAABA453253F52630042974E /* CustomTableViewCell.swift in Sources */,
 				FA353BD0253DDCA50041D5DD /* SceneDelegate.swift in Sources */,
